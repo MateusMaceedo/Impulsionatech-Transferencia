@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "feD3KfNklQBoB1gbJ5r1im1Qf4EkScFVJ2kJTEBFyI6ffyBCTFLgYBw0RE/k1qP4zHT5qPbKerEd2dC7Mx+x5w==",
+  "success": true,
+  "projectFilePath": "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/ImpulsionaTech.Transferencia.Api.csproj",
+  "expectedPackageFiles": [
+    "/home/mateus/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/mateus/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/mateus/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/mateus/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/mateus/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/mateus/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
