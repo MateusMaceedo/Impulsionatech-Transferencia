@@ -72,6 +72,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ImpulsionaTech.Transferencia.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ImpulsionaTech.Transferencia.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Application.dll": {}
+        }
+      },
+      "ImpulsionaTech.Transferencia.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Domain.dll": {}
+        }
+      },
+      "ImpulsionaTech.Transferencia.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ImpulsionaTech.Transferencia.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Infra.dll": {}
+        }
       }
     }
   },
@@ -200,10 +236,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ImpulsionaTech.Transferencia.Application/1.0.0": {
+      "type": "project",
+      "path": "../ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj",
+      "msbuildProject": "../ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj"
+    },
+    "ImpulsionaTech.Transferencia.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ImpulsionaTech.Transferencia.Domain/ImpulsionaTech.Transferencia.Domain.csproj",
+      "msbuildProject": "../ImpulsionaTech.Transferencia.Domain/ImpulsionaTech.Transferencia.Domain.csproj"
+    },
+    "ImpulsionaTech.Transferencia.Infra/1.0.0": {
+      "type": "project",
+      "path": "../ImpulsionaTech.Transferencia.Infra/ImpulsionaTech.Transferencia.Infra.csproj",
+      "msbuildProject": "../ImpulsionaTech.Transferencia.Infra/ImpulsionaTech.Transferencia.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ImpulsionaTech.Transferencia.Application >= 1.0.0",
+      "ImpulsionaTech.Transferencia.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -231,7 +284,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj": {
+              "projectPath": "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj"
+            },
+            "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Infra/ImpulsionaTech.Transferencia.Infra.csproj": {
+              "projectPath": "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Infra/ImpulsionaTech.Transferencia.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

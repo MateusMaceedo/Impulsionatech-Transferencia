@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ImpulsionaTech.Transferencia.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ImpulsionaTech.Transferencia.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Application.dll": {}
+        }
+      },
+      "ImpulsionaTech.Transferencia.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImpulsionaTech.Transferencia.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ImpulsionaTech.Transferencia.Application/1.0.0": {
+      "type": "project",
+      "path": "../ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj",
+      "msbuildProject": "../ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj"
+    },
+    "ImpulsionaTech.Transferencia.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ImpulsionaTech.Transferencia.Domain/ImpulsionaTech.Transferencia.Domain.csproj",
+      "msbuildProject": "../ImpulsionaTech.Transferencia.Domain/ImpulsionaTech.Transferencia.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ImpulsionaTech.Transferencia.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/mateus/.nuget/packages/": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj": {
+              "projectPath": "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Application/ImpulsionaTech.Transferencia.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
