@@ -9,7 +9,7 @@ namespace ImpulsionaTech.Transferencia.Domain.Entities
   {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string? Id { get; set; }
+    public string Id { get; set; }
 
     [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
     public DateTime DataTransferencia { get; set; } = DateTime.Now;

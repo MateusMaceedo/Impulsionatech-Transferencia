@@ -1,16 +1,18 @@
 using ImpulsionaTech.Transferencia.Api.Controllers.Base;
+using ImpulsionaTech.Transferencia.Api.Tools;
+using ImpulsionaTech.Transferencia.Application.UseCases.Commands;
+using ImpulsionaTech.Transferencia.Application.UseCases.Handlers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ImpulsionaTech.Transferencia.Api.Controllers.v1
 {
-    [Route("[controller]")]
+    [Route("v1/[controller]/")]
     public class TransferenciaController : BaseController
     {
-        private readonly ILogger<TransferenciaController> _logger;
-
-        public TransferenciaController(ILogger<TransferenciaController> logger)
+        [HttpPost("PostTransferencia/")]
+        public async Task<ActionResult> GetCep([FromBody]RealizarTransferenciaCommand transferenciaCommand, [FromServices]RealizarTransferenciaHandler handler)
         {
-            _logger = logger;
+            return new ParseRequestResult().ParseToActionResult(await handler.Handle(transferenciaCommand));
         }
     }
 }

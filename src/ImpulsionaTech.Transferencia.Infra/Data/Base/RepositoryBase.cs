@@ -7,7 +7,7 @@ namespace ImpulsionaTech.Transferencia.Infra.Data.Base
   public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
     where TEntity : EntityBase
   {
-    public readonly IMongoCollection<TEntity>? EntityMongoCollection;
+    public readonly IMongoCollection<TEntity> EntityMongoCollection;
 
     public RepositoryBase(string collectionName, IDbConnectionString settings)
     {
@@ -28,17 +28,19 @@ namespace ImpulsionaTech.Transferencia.Infra.Data.Base
       return (await EntityMongoCollection.FindAsync(query)).ToList();
     }
 
-    public virtual TEntity Inserir(TEntity entity)
+    public virtual IMongoCollection<TEntity>? GetEntityMongoCollection()
+    {
+      return EntityMongoCollection;
+    }
+
+    public virtual TEntity Inserir(TEntity entity, IMongoCollection<TEntity> entityMongoCollection)
     {
       entity.AlteradoEm = DateTime.Now;
-      EntityMongoCollection.InsertOne(entity);
+      entityMongoCollection.InsertOne(entity);
       return entity;
     }
 
-    public virtual void Inserir(IEnumerable<TEntity> entities)
-    {
-      EntityMongoCollection.InsertMany(entities);
-    }
+    public virtual void Inserir(IEnumerable<TEntity> entities) => EntityMongoCollection.InsertMany(entities);
 
     public virtual void Alterar(string id, TEntity entityIn)
     {
