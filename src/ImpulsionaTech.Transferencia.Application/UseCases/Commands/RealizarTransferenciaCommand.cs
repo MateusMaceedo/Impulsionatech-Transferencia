@@ -1,12 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace ImpulsionaTech.Transferencia.Application.UseCases.Commands
 {
-    public class RealizarTransferenciaCommand
+  public class RealizarTransferenciaCommand : ICommand
+  {
+    public string Id { get; set; }
+    public string NomeOrigem { get; set; }
+
+    public RealizarTransferenciaCommand(string id, string nomeOrigem)
     {
-        
+        Id = id;
+        NomeOrigem = nomeOrigem;
     }
+  }
 }

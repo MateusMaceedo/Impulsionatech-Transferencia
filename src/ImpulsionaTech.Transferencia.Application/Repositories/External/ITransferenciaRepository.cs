@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ImpulsionaTech.Transferencia.Application.Results;
 
 namespace ImpulsionaTech.Transferencia.Application.Repositories.External
 {
-    public class ITransferenciaRepository
-    {
-        
-    }
+  public interface ITransferenciaRepository
+  {
+    Task<RequestResult> PostTransferencia(string id);
+  }
 }

@@ -1,0 +1,12 @@
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.deps.json
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/bin/Debug/net6.0/ref/ImpulsionaTech.Transferencia.Domain.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.pdb
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.csproj.AssemblyReference.cache
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.AssemblyInfoInputs.cache
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.AssemblyInfo.cs
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.csproj.CoreCompileInputs.cache
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ref/ImpulsionaTech.Transferencia.Domain.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Domain/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.pdb

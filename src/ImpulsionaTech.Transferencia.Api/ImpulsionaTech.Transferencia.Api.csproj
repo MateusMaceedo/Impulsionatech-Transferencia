@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImpulsionaTech.Transferencia.Application\ImpulsionaTech.Transferencia.Application.csproj" />
+    <ProjectReference Include="..\ImpulsionaTech.Transferencia.Infra\ImpulsionaTech.Transferencia.Infra.csproj" />
   </ItemGroup>
 
 </Project>
