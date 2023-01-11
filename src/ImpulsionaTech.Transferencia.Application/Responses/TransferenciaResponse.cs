@@ -16,7 +16,7 @@ namespace ImpulsionaTech.Transferencia.Application.Responses
     public string? ContaDestino { get; set; }
     [JsonPropertyName("agencia_origem")]
     public string? AgenciaOrigem { get; set; }
-    [JsonPropertyName("Agencia_destino")]
+    [JsonPropertyName("agencia_destino")]
     public string? AgenciaDestino { get; set; }
     [JsonPropertyName("valor")]
     public decimal Valor { get; set; }
