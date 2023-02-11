@@ -5,19 +5,19 @@ namespace ImpulsionaTech.Transferencia.Application.Responses
   public class TransferenciaResponse
   {
     [JsonPropertyName("id")]
-    public string? Id { get; set; }
+    public string Id { get; set; }
     [JsonPropertyName("nome_origem")]
-    public string? NomeOrigem { get; set; }
+    public string NomeOrigem { get; set; }
     [JsonPropertyName("nome_destino")]
-    public string? NomeDestino { get; set; }
+    public string NomeDestino { get; set; }
     [JsonPropertyName("conta_origem")]
-    public string? ContaOrigem { get; set; }
+    public string ContaOrigem { get; set; }
     [JsonPropertyName("conta_destino")]
-    public string? ContaDestino { get; set; }
+    public string ContaDestino { get; set; }
     [JsonPropertyName("agencia_origem")]
-    public string? AgenciaOrigem { get; set; }
+    public string AgenciaOrigem { get; set; }
     [JsonPropertyName("agencia_destino")]
-    public string? AgenciaDestino { get; set; }
+    public string AgenciaDestino { get; set; }
     [JsonPropertyName("valor")]
     public decimal Valor { get; set; }
     [JsonPropertyName("data_transferencia")]
