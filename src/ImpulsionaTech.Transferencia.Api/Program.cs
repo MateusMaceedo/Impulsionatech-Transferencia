@@ -3,6 +3,8 @@ using ImpulsionaTech.Transferencia.Application.UseCases.Commands;
 using ImpulsionaTech.Transferencia.Application.UseCases.Handlers;
 using ImpulsionaTech.Transferencia.Domain.Interfaces.Caching;
 using ImpulsionaTech.Transferencia.Domain.Interfaces.Externals;
+using ImpulsionaTech.Transferencia.Infra.Data.Context;
+using ImpulsionaTech.Transferencia.Infra.Repositories;
 using ImpulsionaTech.Transferencia.Infra.Repositories.Caching;
 using ImpulsionaTech.Transferencia.Infra.Repositories.External;
 
@@ -28,6 +30,10 @@ builder.Services.AddScoped<IHandler<ProcessarEnderecoCommand>, ProcessarEndereco
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
 builder.Services.AddHttpClient<IEnderecoRepository, EnderecoRepository>();
+
+builder.Services.AddScoped<IEnderecoContext, EnderecoContext>();
+
+builder.Services.AddScoped<IConsultaEnderecoRepository, ConsultaEnderecoRepository>();
 
 builder.Services.AddVersionedApiExplorer(options =>
 {
