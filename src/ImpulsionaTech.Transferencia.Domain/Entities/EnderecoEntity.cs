@@ -1,7 +1,15 @@
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace ImpulsionaTech.Transferencia.Domain.Entities
 {
   public class EnderecoEntity : EntityBase
   {
+    //TODO: Testar como protected
+    public EnderecoEntity()
+    {
+
+    }
+    // Aberta para extensão e fechada para modificação
     public EnderecoEntity(string cep, string logradouro, string unidadeFederacao, int numeroLogradouro, string bairro)
     {
       Cep = cep;
@@ -11,11 +19,12 @@ namespace ImpulsionaTech.Transferencia.Domain.Entities
       Bairro = bairro;
     }
 
-    public string Cep { get; private set; }
-    public string Logradouro { get; private set; }
-    public string UnidadeFederacao { get; private set; }
-    public int NumeroLogradouro { get; private set; }
-    public string Bairro { get; private set; }
+    [BsonElement("Cep")]
+    public string Cep { get; set; }
+    public string Logradouro { get; set; }
+    public string UnidadeFederacao { get; set; }
+    public int NumeroLogradouro { get; set; }
+    public string Bairro { get; set; }
     public bool IsValid => Validate();
     public bool IsFreteGratis => IsElegivelFreteGratis();
 
