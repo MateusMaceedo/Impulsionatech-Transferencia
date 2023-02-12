@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ImpulsionaTech.Transferencia.Application\ImpulsionaTech.Transferencia.Application.csproj" />
     <ProjectReference Include="..\ImpulsionaTech.Transferencia.Infra\ImpulsionaTech.Transferencia.Infra.csproj" />
+    <ProjectReference Include="..\ImpulsionaTech.Transferencia.CrossCutting\ImpulsionaTech.Transferencia.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>
