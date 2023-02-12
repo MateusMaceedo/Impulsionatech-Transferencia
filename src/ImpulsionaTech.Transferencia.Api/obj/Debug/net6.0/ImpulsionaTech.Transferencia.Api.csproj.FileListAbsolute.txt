@@ -6,6 +6,8 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Api.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ref/ImpulsionaTech.Transferencia.Api.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Api.pdb
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/AWSSDK.Core.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/AWSSDK.SecurityToken.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/DnsClient.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Flunt.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Google.Api.CommonProtos.dll
@@ -31,6 +33,7 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Binder.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
@@ -45,6 +48,7 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Newtonsoft.Json.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/SharpCompress.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Snappier.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/StackExchange.Redis.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -56,19 +60,13 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/System.Security.Permissions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/System.Windows.Extensions.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ZstdSharp.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win-x64/native/grpc_csharp_ext.x64.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win-x86/native/grpc_csharp_ext.x86.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/linux/native/libsnappy64.so
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/linux/native/libzstd.so
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/osx/native/libsnappy64.dylib
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/osx/native/libzstd.dylib
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/native/libzstd.dll
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/native/snappy32.dll
-/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/native/snappy64.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/linux/native/libmongocrypt.so
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/osx/native/libmongocrypt.dylib
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll

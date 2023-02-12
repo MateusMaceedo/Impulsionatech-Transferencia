@@ -1,6 +1,4 @@
 using ImpulsionaTech.Transferencia.Api.Middlewares;
-using ImpulsionaTech.Transferencia.Application.UseCases.Commands;
-using ImpulsionaTech.Transferencia.Application.UseCases.Handlers;
 using ImpulsionaTech.Transferencia.Domain.Interfaces.Caching;
 using ImpulsionaTech.Transferencia.Domain.Interfaces.Externals;
 using ImpulsionaTech.Transferencia.Infra.Data.Context;
@@ -23,17 +21,13 @@ builder.Services.AddStackExchangeRedisCache(o =>
 
 builder.Services.AddScoped<ICachingService, CachingService>();
 
-builder.Services.AddScoped<ProcessarEnderecoHandler>();
-
-builder.Services.AddScoped<IHandler<ProcessarEnderecoCommand>, ProcessarEnderecoHandler>();
-
-builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+builder.Services.AddScoped<IConsultaEnderecoRepository, ConsultaEnderecoRepository>();
 
 builder.Services.AddHttpClient<IEnderecoRepository, EnderecoRepository>();
 
-builder.Services.AddScoped<IEnderecoContext, EnderecoContext>();
+builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
-builder.Services.AddScoped<IConsultaEnderecoRepository, ConsultaEnderecoRepository>();
+builder.Services.AddScoped<IEnderecoContext, EnderecoContext>();
 
 builder.Services.AddVersionedApiExplorer(options =>
 {
