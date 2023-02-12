@@ -28,7 +28,7 @@ namespace ImpulsionaTech.Transferencia.Infra.Data.Base
       return (await EntityMongoCollection.FindAsync(query)).ToList();
     }
 
-    public virtual IMongoCollection<TEntity>? GetEntityMongoCollection()
+    public virtual IMongoCollection<TEntity> GetEntityMongoCollection()
     {
       return EntityMongoCollection;
     }

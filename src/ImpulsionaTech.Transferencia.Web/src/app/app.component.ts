@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { TransferenciaService } from './services/transferencia.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ImpulsionaTech.Transferencia.Web';
+  title = 'bytebank';
+  transferencias: any[] = [];
+
+  constructor(private service: TransferenciaService){
+
+  }
 }

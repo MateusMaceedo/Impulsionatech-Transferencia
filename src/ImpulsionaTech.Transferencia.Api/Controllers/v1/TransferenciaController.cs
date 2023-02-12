@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ImpulsionaTech.Transferencia.Api.Controllers.v1
 {
-  [Route("v1/[controller]/")]
+  [Route("api/v1/[controller]/")]
   public class TransferenciaController : BaseController
   {
     [HttpPost("PostTransferencia/")]

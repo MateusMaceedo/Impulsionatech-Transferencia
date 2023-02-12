@@ -1,0 +1,16 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  impulsionatechtransferenciaapi:
+    image: impulsionatechtransferenciaapi
+    build:
+      context: .
+      dockerfile: src/ImpulsionaTech.Transferencia.Api/Dockerfile
+    ports:
+      - 5213:5213
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
