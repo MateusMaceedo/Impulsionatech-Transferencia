@@ -9,20 +9,42 @@
       "ImpulsionaTech.Transferencia.Infra/1.0.0": {
         "dependencies": {
           "ImpulsionaTech.Transferencia.Application": "1.0.0",
-          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.2"
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.2",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.2",
+          "MongoDB.Driver": "2.19.0"
         },
         "runtime": {
           "ImpulsionaTech.Transferencia.Infra.dll": {}
         }
       },
-      "DnsClient/1.6.0": {
+      "AWSSDK.Core/3.7.100.14": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.14"
+          }
+        }
+      },
+      "AWSSDK.SecurityToken/3.7.100.14": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.100.14"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.14"
+          }
+        }
+      },
+      "DnsClient/1.6.1": {
         "dependencies": {
           "Microsoft.Win32.Registry": "5.0.0"
         },
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
-            "assemblyVersion": "1.6.0.0",
-            "fileVersion": "1.6.0.0"
+            "assemblyVersion": "1.6.1.0",
+            "fileVersion": "1.6.1.0"
           }
         }
       },
@@ -518,6 +540,17 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/7.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.222.60605"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
@@ -655,87 +688,55 @@
           }
         }
       },
-      "MongoDB.Bson/2.15.0": {
+      "MongoDB.Bson/2.19.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.1/MongoDB.Bson.dll": {
-            "assemblyVersion": "2.15.0.0",
-            "fileVersion": "2.15.0.0"
+            "assemblyVersion": "2.19.0.0",
+            "fileVersion": "2.19.0.0"
           }
         }
       },
-      "MongoDB.Driver/2.15.0": {
+      "MongoDB.Driver/2.19.0": {
         "dependencies": {
-          "MongoDB.Bson": "2.15.0",
-          "MongoDB.Driver.Core": "2.15.0",
-          "MongoDB.Libmongocrypt": "1.3.0"
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "MongoDB.Bson": "2.19.0",
+          "MongoDB.Driver.Core": "2.19.0",
+          "MongoDB.Libmongocrypt": "1.7.0"
         },
         "runtime": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {
-            "assemblyVersion": "2.15.0.0",
-            "fileVersion": "2.15.0.0"
+            "assemblyVersion": "2.19.0.0",
+            "fileVersion": "2.19.0.0"
           }
         }
       },
-      "MongoDB.Driver.Core/2.15.0": {
+      "MongoDB.Driver.Core/2.19.0": {
         "dependencies": {
-          "DnsClient": "1.6.0",
-          "MongoDB.Bson": "2.15.0",
-          "MongoDB.Libmongocrypt": "1.3.0",
+          "AWSSDK.SecurityToken": "3.7.100.14",
+          "DnsClient": "1.6.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "MongoDB.Bson": "2.19.0",
+          "MongoDB.Libmongocrypt": "1.7.0",
           "SharpCompress": "0.30.1",
-          "System.Buffers": "4.5.1"
+          "Snappier": "1.0.0",
+          "System.Buffers": "4.5.1",
+          "ZstdSharp.Port": "0.6.2"
         },
         "runtime": {
           "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
-            "assemblyVersion": "2.15.0.0",
-            "fileVersion": "2.15.0.0"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/linux/native/libsnappy64.so": {
-            "rid": "linux",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/linux/native/libzstd.so": {
-            "rid": "linux",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx/native/libsnappy64.dylib": {
-            "rid": "osx",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx/native/libzstd.dylib": {
-            "rid": "osx",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win/native/libzstd.dll": {
-            "rid": "win",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win/native/snappy32.dll": {
-            "rid": "win",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win/native/snappy64.dll": {
-            "rid": "win",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "assemblyVersion": "2.19.0.0",
+            "fileVersion": "2.19.0.0"
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.3.0": {
+      "MongoDB.Libmongocrypt/1.7.0": {
         "runtime": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {
-            "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.0"
+            "assemblyVersion": "1.7.0.0",
+            "fileVersion": "1.7.0.0"
           }
         },
         "runtimeTargets": {
@@ -786,6 +787,14 @@
           "lib/net5.0/SharpCompress.dll": {
             "assemblyVersion": "0.30.1.0",
             "fileVersion": "0.30.1.0"
+          }
+        }
+      },
+      "Snappier/1.0.0": {
+        "runtime": {
+          "lib/net5.0/Snappier.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1171,6 +1180,14 @@
           }
         }
       },
+      "ZstdSharp.Port/0.6.2": {
+        "runtime": {
+          "lib/net6.0/ZstdSharp.dll": {
+            "assemblyVersion": "0.6.2.0",
+            "fileVersion": "0.6.2.0"
+          }
+        }
+      },
       "ImpulsionaTech.Transferencia.Application/1.0.0": {
         "dependencies": {
           "ImpulsionaTech.Transferencia.Domain": "1.0.0",
@@ -1186,7 +1203,7 @@
           "Google.Cloud.Firestore": "2.5.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "MongoDB.Driver": "2.15.0"
+          "MongoDB.Driver": "2.19.0"
         },
         "runtime": {
           "ImpulsionaTech.Transferencia.Domain.dll": {}
@@ -1200,12 +1217,26 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DnsClient/1.6.0": {
+    "AWSSDK.Core/3.7.100.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kVd3IxAs5EQZSKTQhMUaJmuOQ1n2VWKExatdqNszsxxKzTB+Toaxx3M1DsN3yKfHloMXPmt6fgfcOqRwKheoUQ==",
-      "path": "dnsclient/1.6.0",
-      "hashPath": "dnsclient.1.6.0.nupkg.sha512"
+      "sha512": "sha512-gnEgxBlk4PFEfdPE8Lkf4+D16MZFYSaW7/o6Wwe5e035QWUkTJX0Dn4LfTCdV5QSEL/fOFxu+yCAm55eIIBgog==",
+      "path": "awssdk.core/3.7.100.14",
+      "hashPath": "awssdk.core.3.7.100.14.nupkg.sha512"
+    },
+    "AWSSDK.SecurityToken/3.7.100.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dGCVuVo0CFUKWW85W8YENO+aREf8sCBDjvGbnNvxJuNW4Ss+brEU9ltHhq2KfZze2VUNK1/wygbPG1bmbpyXEw==",
+      "path": "awssdk.securitytoken/3.7.100.14",
+      "hashPath": "awssdk.securitytoken.3.7.100.14.nupkg.sha512"
+    },
+    "DnsClient/1.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4H/f2uYJOZ+YObZjpY9ABrKZI+JNw3uizp6oMzTXwDw6F+2qIPhpRl/1t68O/6e98+vqNiYGu+lswmwdYUy3gg==",
+      "path": "dnsclient/1.6.1",
+      "hashPath": "dnsclient.1.6.1.nupkg.sha512"
     },
     "Flunt/2.0.5": {
       "type": "package",
@@ -1466,6 +1497,13 @@
       "path": "microsoft.extensions.configuration.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Binder/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RaI9E02hDI6lE6bkWqnGnc264sht+NF2D3Q2NR5AhVY8woezegeqrDaoQIVwTSuUkGrSafyJe6D4UBRpQhjhUg==",
+      "path": "microsoft.extensions.configuration.binder/7.0.2",
+      "hashPath": "microsoft.extensions.configuration.binder.7.0.2.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1564,33 +1602,33 @@
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
     },
-    "MongoDB.Bson/2.15.0": {
+    "MongoDB.Bson/2.19.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5uPSADVLydGJ4CbmjrsQn7v3NugSdx6htJ4cMNbo8youlfBa5v6YbEqztbipnl+dT1L/YBkJKZ1DDp6LWl0Hqw==",
-      "path": "mongodb.bson/2.15.0",
-      "hashPath": "mongodb.bson.2.15.0.nupkg.sha512"
+      "sha512": "sha512-pGp9F2PWU3Dj54PiXKibuaQ5rphWkfp8/Nsy5jLp2dWZGRGlr3r/Lfwnr0PvfihFfxieUcJZ2z3VeO8RctXcvA==",
+      "path": "mongodb.bson/2.19.0",
+      "hashPath": "mongodb.bson.2.19.0.nupkg.sha512"
     },
-    "MongoDB.Driver/2.15.0": {
+    "MongoDB.Driver/2.19.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MaDExORt2JLBHFlG3dJZIdQlZsfK8YjfEbXJECqAU/Ez8BwbJwjHS0AjOBQZPj3U4UDU5pnGYiQn4P0dM9DnMw==",
-      "path": "mongodb.driver/2.15.0",
-      "hashPath": "mongodb.driver.2.15.0.nupkg.sha512"
+      "sha512": "sha512-W/1YByn5gNGfHBe8AyDURXWKn1Z9xJ9IUjplFcvk8B/jlTlDOkmXgmwjlToIdqr0l8rX594kksjGx3a9if3dsg==",
+      "path": "mongodb.driver/2.19.0",
+      "hashPath": "mongodb.driver.2.19.0.nupkg.sha512"
     },
-    "MongoDB.Driver.Core/2.15.0": {
+    "MongoDB.Driver.Core/2.19.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oEfGhyxHDmH3KhRHPZqVEYSfLqFwOLrY5zMszbELKNxrgkJj82MNJ8AzGVOsayaxtrQqqcAGfyQK8Ecc1yoc0Q==",
-      "path": "mongodb.driver.core/2.15.0",
-      "hashPath": "mongodb.driver.core.2.15.0.nupkg.sha512"
+      "sha512": "sha512-KbzJJJc4EsUZ+YQoe7zZL1OxHVC9RjgQMso2LjhZWnlP+IHSON63vKNt7jGarXrOVXK0DqIUrRwQyXMgmqTX5g==",
+      "path": "mongodb.driver.core/2.19.0",
+      "hashPath": "mongodb.driver.core.2.19.0.nupkg.sha512"
     },
-    "MongoDB.Libmongocrypt/1.3.0": {
+    "MongoDB.Libmongocrypt/1.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BAvqY/otOsmAGTsmzIYXRFysvpu8X7rYkDzEBX4iBlrF57SB+fD5px9sCPR6sETgfZ6k98qUNS6go5wtY9WOBA==",
-      "path": "mongodb.libmongocrypt/1.3.0",
-      "hashPath": "mongodb.libmongocrypt.1.3.0.nupkg.sha512"
+      "sha512": "sha512-p9+peTZX63nGHskOLhvhfBtrknxNg1RzXepE07rPozuCGz27bMjCcQyvn2YByg0L3YEcNWdTmI4BlnG/5RF+5Q==",
+      "path": "mongodb.libmongocrypt/1.7.0",
+      "hashPath": "mongodb.libmongocrypt.1.7.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
@@ -1619,6 +1657,13 @@
       "sha512": "sha512-XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "path": "sharpcompress/0.30.1",
       "hashPath": "sharpcompress.0.30.1.nupkg.sha512"
+    },
+    "Snappier/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rFtK2KEI9hIe8gtx3a0YDXdHOpedIf9wYCEYtBEmtlyiWVX3XlCNV03JrmmAi/Cdfn7dxK+k0sjjcLv4fpHnqA==",
+      "path": "snappier/1.0.0",
+      "hashPath": "snappier.1.0.0.nupkg.sha512"
     },
     "StackExchange.Redis/2.2.4": {
       "type": "package",
@@ -1934,6 +1979,13 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "ZstdSharp.Port/0.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jPao/LdUNLUz8rn3H1D8W7wQbZsRZM0iayvWI4xGejJg3XJHT56gcmYdgmCGPdJF1UEBqUjucCRrFB+4HbJsbw==",
+      "path": "zstdsharp.port/0.6.2",
+      "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
     },
     "ImpulsionaTech.Transferencia.Application/1.0.0": {
       "type": "project",

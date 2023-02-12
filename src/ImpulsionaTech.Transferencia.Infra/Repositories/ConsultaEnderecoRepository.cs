@@ -6,8 +6,8 @@ namespace ImpulsionaTech.Transferencia.Infra.Repositories
 {
   public class ConsultaEnderecoRepository : IConsultaEnderecoRepository
   {
-    private readonly EnderecoContext _context;
-    public ConsultaEnderecoRepository(EnderecoContext context)
+    private readonly IEnderecoContext _context;
+    public ConsultaEnderecoRepository(IEnderecoContext context)
     {
       _context = context;
     }
