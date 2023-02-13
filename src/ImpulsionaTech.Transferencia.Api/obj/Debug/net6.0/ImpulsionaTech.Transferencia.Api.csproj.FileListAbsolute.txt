@@ -34,8 +34,11 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Http.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
@@ -76,10 +79,12 @@
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Application.dll
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.CrossCutting.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Infra.dll
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Application.pdb
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Infra.pdb
+/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.CrossCutting.pdb
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/bin/Debug/net6.0/ImpulsionaTech.Transferencia.Domain.pdb
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Api.csproj.AssemblyReference.cache
 /home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/obj/Debug/net6.0/ImpulsionaTech.Transferencia.Api.GeneratedMSBuildEditorConfig.editorconfig

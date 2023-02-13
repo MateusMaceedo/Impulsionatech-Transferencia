@@ -3,10 +3,28 @@
 version: '3.4'
 
 services:
+  transferenciadb:
+    image: mongo
+    container_name: transferenciadb
+    restart: always
+    ports:
+      - "27017-27017"
+    volumes:
+      - mongo_data:/data/db
+
   impulsionatechtransferenciaapi:
     image: impulsionatechtransferenciaapi
+    container_name: impulsionatechtransferenciaapi
+    environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+     - "DatabaseSettings:ConnectionString=mongodb://transferenciadb:27017"
+    depends_on:
+     - transferenciadb
     build:
       context: .
       dockerfile: src/ImpulsionaTech.Transferencia.Api/Dockerfile
     ports:
-      - 5213:5213
+      - "8000:80"
+
+volumes:
+  mongo_data:

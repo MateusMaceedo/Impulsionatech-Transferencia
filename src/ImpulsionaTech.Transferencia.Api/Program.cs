@@ -1,10 +1,6 @@
 using ImpulsionaTech.Transferencia.Api.Middlewares;
-using ImpulsionaTech.Transferencia.Domain.Interfaces.Caching;
-using ImpulsionaTech.Transferencia.Domain.Interfaces.Externals;
-using ImpulsionaTech.Transferencia.Infra.Data.Context;
-using ImpulsionaTech.Transferencia.Infra.Repositories;
-using ImpulsionaTech.Transferencia.Infra.Repositories.Caching;
-using ImpulsionaTech.Transferencia.Infra.Repositories.External;
+using ImpulsionaTech.Transferencia.CrossCutting;
+using ImpulsionaTech.Transferencia.Infra.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,29 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 /// </summary>
 builder.Services.AddControllers();
 
-builder.Services.AddStackExchangeRedisCache(o =>
-      {
-        o.InstanceName = "instance";
-        o.Configuration = "localhost:6379";
-      });
+builder.Services.InjectRedis();
 
-builder.Services.AddScoped<ICachingService, CachingService>();
+builder.Services.AddRegisterServicesAplicacao();
 
-builder.Services.AddScoped<IConsultaEnderecoRepository, ConsultaEnderecoRepository>();
-
-builder.Services.AddHttpClient<IEnderecoRepository, EnderecoRepository>();
-
-builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
-
-builder.Services.AddScoped<IEnderecoContext, EnderecoContext>();
-
-builder.Services.AddVersionedApiExplorer(options =>
-{
-  options.GroupNameFormat = "'v'VVV";
-  options.SubstituteApiVersionInUrl = true;
-});
-
-builder.Services.AddApiVersioning(o => o.ReportApiVersions = true);
+builder.Services.InjectVersioning();
 
 builder.Services.AddEndpointsApiExplorer();
 

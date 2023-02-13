@@ -20,7 +20,7 @@ namespace ImpulsionaTech.Transferencia.Infra.Data.Context
        {
           new EnderecoEntity()
           {
-            Id = Guid.NewGuid().ToString(),
+            Id = "f1640e49-e145-44c2-b243-894bd0ab92a6",
             AlteradoEm = DateTime.UtcNow,
             Bairro = "São Paulo",
             Cep = "08589350",
