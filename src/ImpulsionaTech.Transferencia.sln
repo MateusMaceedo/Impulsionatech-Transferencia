@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -14,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpulsionaTech.Transferencia.CrossCutting", "ImpulsionaTech.Transferencia.CrossCutting\ImpulsionaTech.Transferencia.CrossCutting.csproj", "{F779AE96-7037-4882-B4D7-52E15C027546}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpulsionaTech.Transferencia.Tests", "ImpulsionaTech.Transferencia.Tests\ImpulsionaTech.Transferencia.Tests.csproj", "{5DE41A7F-96C2-4427-ADE0-AAE0E2C4E327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpulsionaTech.Transferencia.MessageBroker", "ImpulsionaTech.Transferencia.MessageBroker\ImpulsionaTech.Transferencia.MessageBroker.csproj", "{78B4C60C-F6B5-4AA4-B3F9-F1328C02383F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +49,9 @@ Global
 		{5DE41A7F-96C2-4427-ADE0-AAE0E2C4E327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE41A7F-96C2-4427-ADE0-AAE0E2C4E327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE41A7F-96C2-4427-ADE0-AAE0E2C4E327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B4C60C-F6B5-4AA4-B3F9-F1328C02383F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B4C60C-F6B5-4AA4-B3F9-F1328C02383F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B4C60C-F6B5-4AA4-B3F9-F1328C02383F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B4C60C-F6B5-4AA4-B3F9-F1328C02383F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
