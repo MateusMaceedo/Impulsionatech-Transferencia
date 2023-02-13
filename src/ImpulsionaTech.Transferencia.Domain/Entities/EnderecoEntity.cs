@@ -1,5 +1,3 @@
-using MongoDB.Bson.Serialization.Attributes;
-
 namespace ImpulsionaTech.Transferencia.Domain.Entities
 {
   public class EnderecoEntity : EntityBase
@@ -19,7 +17,6 @@ namespace ImpulsionaTech.Transferencia.Domain.Entities
       Bairro = bairro;
     }
 
-    [BsonElement("Cep")]
     public string Cep { get; set; }
     public string Logradouro { get; set; }
     public string UnidadeFederacao { get; set; }

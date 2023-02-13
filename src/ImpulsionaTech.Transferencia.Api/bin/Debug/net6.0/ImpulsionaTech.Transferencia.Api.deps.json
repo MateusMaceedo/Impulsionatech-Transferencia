@@ -1440,6 +1440,8 @@
       "ImpulsionaTech.Transferencia.Infra/1.0.0": {
         "dependencies": {
           "ImpulsionaTech.Transferencia.Application": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.2",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Binder": "7.0.2",
