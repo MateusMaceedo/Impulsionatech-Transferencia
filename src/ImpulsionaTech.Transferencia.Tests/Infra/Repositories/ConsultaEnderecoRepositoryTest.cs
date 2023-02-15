@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Xunit;
 
 namespace ImpulsionaTech.Transferencia.Tests.Infra.Repositories
 {
-    public class ConsultaEnderecoRepositoryTest
+  public class ConsultaEnderecoRepositoryTest
     {
       [Fact]
       public void IsConsulta_Endereco_Sucess()
