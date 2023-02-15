@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VV/j9rj0DCXp+630Ap0ZAaaaB0Ha2i4U7nJ/SnCkEM2GqhXV8x8ynaEFAM13RhLQsKgBqdKLa+cWYu4nlJiNdA==",
-  "success": true,
+  "dgSpecHash": "DTOwmcl0v3b6IEOdPIxR8Q6xW4ZuKp3HduGYiAG+tpcHKtBnBXcZCGa51gM5LBFtD/yWYFY9sizyHJifWbWdWA==",
+  "success": false,
   "projectFilePath": "/home/mateus/projetos/dotnet/Impulsionatech-Transferencia/src/ImpulsionaTech.Transferencia.Api/ImpulsionaTech.Transferencia.Api.csproj",
   "expectedPackageFiles": [
+    "/home/mateus/.nuget/packages/amazon.lambda.sqsevents/1.2.0/amazon.lambda.sqsevents.1.2.0.nupkg.sha512",
     "/home/mateus/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/home/mateus/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "/home/mateus/.nuget/packages/awssdk.sqs/3.5.1.14/awssdk.sqs.3.5.1.14.nupkg.sha512",
     "/home/mateus/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/home/mateus/.nuget/packages/flunt/2.0.5/flunt.2.0.5.nupkg.sha512",
     "/home/mateus/.nuget/packages/google.api.commonprotos/2.5.0/google.api.commonprotos.2.5.0.nupkg.sha512",
@@ -153,5 +155,15 @@
     "/home/mateus/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
     "/home/mateus/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1107",
+      "level": "Error",
+      "message": "Version conflict detected for AWSSDK.Core. Install/reference AWSSDK.Core 3.7.100.14 directly to project ImpulsionaTech.Transferencia.Api to resolve this issue. \n ImpulsionaTech.Transferencia.Api -> ImpulsionaTech.Transferencia.Infra -> MongoDB.Driver 2.19.0 -> MongoDB.Driver.Core 2.19.0 -> AWSSDK.SecurityToken 3.7.100.14 -> AWSSDK.Core (>= 3.7.100.14 && < 4.0.0) \n ImpulsionaTech.Transferencia.Api -> ImpulsionaTech.Transferencia.Infra -> AWSSDK.SQS 3.5.1.14 -> AWSSDK.Core (>= 3.5.2.4 && < 3.6.0).",
+      "libraryId": "AWSSDK.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

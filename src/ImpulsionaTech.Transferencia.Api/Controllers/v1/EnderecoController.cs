@@ -1,7 +1,6 @@
 using ImpulsionaTech.Transferencia.Api.Controllers.Base;
 using ImpulsionaTech.Transferencia.Api.Controllers.Contracts;
 using ImpulsionaTech.Transferencia.Domain.Entities;
-using ImpulsionaTech.Transferencia.Infra.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ImpulsionaTech.Transferencia.Api.Controllers.v1

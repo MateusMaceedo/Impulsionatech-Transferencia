@@ -37,6 +37,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.5.1.14, )"
+            },
+            "Amazon.Lambda.SQSEvents": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
